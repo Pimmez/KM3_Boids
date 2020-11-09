@@ -94,7 +94,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.5, y: 1.24, z: 2.09}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5681528239500488148
 MonoBehaviour:
@@ -110,7 +110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBoidsController: {fileID: 0}
   boidType: 1
-  moveSpeed: 8
-  rotationPercentage: 0.2
-  separationProximity: 11
+  moveSpeed: 7.5
+  rotationPercentage: 0.6
+  separationProximity: 3
   neighbourDetectRadius: 100
