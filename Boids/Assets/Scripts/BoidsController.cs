@@ -15,16 +15,16 @@ public class BoidsController : MonoBehaviour
 	// Reference to in-scene goal GameObject for Boid objects in this BoidsController.
 	public GameObject goalObject;
 
-	void Awake()
+	private void Awake()
 	{
 		allBoidGameObjects = new List<GameObject>();
 		SpawnInitialBoids(numBoids, spawnRadius);
 	}
 
 	/// Spawn the starting Boids.
-	/// @param numToSpawn - Total instances of prefabBoid to be instantiated
-	/// @param spawnRadius - Maximum distance from this BoidController object's transform position
-	void SpawnInitialBoids(int numToSpawn, int spawnRadius)
+	/// numToSpawn - Total instances of prefabBoid to be instantiated
+	/// spawnRadius - Maximum distance from this BoidController object's transform position
+	private void SpawnInitialBoids(int numToSpawn, int spawnRadius)
 	{
 		Vector3 spawnOffset;
 		for (int i = 0; i < numToSpawn; i++)
@@ -45,7 +45,7 @@ public class BoidsController : MonoBehaviour
 	}
 
 	/// Return the position the goal GameObject of this BoidsController.
-	/// @return - position of the goal GameObject
+	/// return - position of the goal GameObject
 	public Vector3 GetGoalPosition()
 	{
 		return goalObject.transform.position;
